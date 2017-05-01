@@ -1,25 +1,27 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {TabsModule, ButtonsModule, CarouselModule} from 'ngx-bootstrap';
 import {routing, RootComponent} from './routes';
 
-import {TechsModule} from './techs';
-
 import {MainComponent} from './main';
-import {HeaderComponent} from './header';
-import {TitleComponent} from './title';
+import {HeaderComponent} from './header/header';
+import {CentralComponent} from './central';
 import {FooterComponent} from './footer';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule, FormsModule,
     routing,
-    TechsModule
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot(),
+    CarouselModule.forRoot(),
   ],
   declarations: [
     RootComponent,
     MainComponent,
     HeaderComponent,
-    TitleComponent,
+    CentralComponent,
     FooterComponent
   ],
   bootstrap: [RootComponent]
