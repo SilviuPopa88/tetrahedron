@@ -1,11 +1,11 @@
-import {CentralComponent} from './central';
+import {HomeComponent} from './home';
 import {TestBed, async} from '@angular/core/testing';
 
 describe('central component', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        CentralComponent
+        HomeComponent
       ]
     });
     TestBed.compileComponents();

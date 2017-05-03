@@ -1,17 +1,22 @@
 import {Component} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './main';
+import {AboutComponent} from './about/about';
+import {HomeComponent} from './home/home';
 
-@Component({
-  selector: 'fountain-root',
-  template: '<router-outlet></router-outlet>'
-})
-export class RootComponent {}
 
 export const routes: Routes = [
   {
     path: '',
-    component: MainComponent
+    component: HomeComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 
