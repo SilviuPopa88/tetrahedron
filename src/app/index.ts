@@ -6,8 +6,11 @@ import {routing} from './routes';
 
 import {MainComponent} from './main';
 import {HeaderComponent} from './header/header';
-import {AboutComponent} from './about/about';
 import {HomeComponent} from './home/home';
+import {AboutComponent} from './about/about';
+import {CollaborationComponent} from './collaboration/collaboration';
+import {BlogComponent} from './blog/blog';
+import {ContactComponent} from './contact/contact';
 import {FooterComponent} from './footer/footer';
 
 import { Router } from '@angular/router';
@@ -22,8 +25,11 @@ import { Router } from '@angular/router';
   declarations: [
     MainComponent,
     HeaderComponent,
-    AboutComponent,
     HomeComponent,
+    AboutComponent,
+    CollaborationComponent,
+    BlogComponent,
+    ContactComponent,
     FooterComponent
   ],
   bootstrap: [MainComponent]

@@ -9,16 +9,11 @@
         </p>
         <span class="flex-1"></span>
         <div class="btn-group">
-          <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Acasa"
-                 uncheckable><a routerLink="/home" routerLinkActive="active">Home</a></label>
-          <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Despre"
-                 uncheckable><a routerLink="/about" routerLinkActive="active">Despre</a></label>
-          <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="CPC"
-                 uncheckable>Cum putem colabora</label>
-          <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Articole"
-                 uncheckable>Articole</label>
-          <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Contact"
-                 uncheckable>Contact</label>
+          <a routerLink="/home" class="btn" routerLinkActive="active">Home</a>
+          <a routerLink="/about" class="btn" routerLinkActive="active">Despre</a>
+          <a routerLink="/collaboration" class="btn" routerLinkActive="active">Cum putem colabora</a>
+          <a routerLink="/blog" class="btn" routerLinkActive="active">Blog</a>
+          <a routerLink="/contact" class="btn" routerLinkActive="active">Contact</a>
         </div>
       </div>
     </div>

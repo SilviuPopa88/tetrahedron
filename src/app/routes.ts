@@ -2,6 +2,9 @@ import {Component} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './main';
 import {AboutComponent} from './about/about';
+import {CollaborationComponent} from './collaboration/collaboration';
+import {BlogComponent} from './blog/blog';
+import {ContactComponent} from './contact/contact';
 import {HomeComponent} from './home/home';
 
 
@@ -17,6 +20,18 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'collaboration',
+    component: CollaborationComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   }
 ];
 
