@@ -13,8 +13,6 @@ import {BlogComponent} from './blog/blog';
 import {ContactComponent} from './contact/contact';
 import {FooterComponent} from './footer/footer';
 
-import { Router } from '@angular/router';
-
 @NgModule({
   imports: [
     BrowserModule, FormsModule,
@@ -35,7 +33,4 @@ import { Router } from '@angular/router';
   bootstrap: [MainComponent]
 })
 export class AppModule {
-  constructor(router: Router) {
-    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
-  }
 }
