@@ -1,25 +1,28 @@
-import { Component, HostListener, Inject, OnInit } from "@angular/core";
-import { DOCUMENT } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'tetra-header',
   template: require('./header.html')
 })
-export class HeaderComponent implements OnInit {
-  public isScrolledTop:boolean = true;
+export class HeaderComponent {
+  public isScrolledTop: boolean = true;
+  public activeButton: string = 'home';
 
-  constructor(@Inject(DOCUMENT) private document:Document) { }
-
-  ngOnInit(){}
-
-  @HostListener('window:scroll', [])
-  onWindowScroll()
-  {
-    let number = this.document.body.scrollTop;
+  scrollHandler(event) {
+    let number = event.target.body.scrollTop;
     if (number > 100) {
       this.isScrolledTop = false;
-    } else if (!this.isScrolledTop && number < 10) {
+    } else if (!this.isScrolledTop && number < 10 && this.activeButton === 'home') {
       this.isScrolledTop = true;
+    }
+  }
+
+  setActiveHeader(activeButton: string) {
+    this.activeButton = activeButton;
+    if (activeButton === 'home') {
+      this.isScrolledTop = true;
+    } else {
+      this.isScrolledTop = false;
     }
   }
 

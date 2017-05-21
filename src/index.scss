@@ -32,16 +32,12 @@ body, h1, h2, h3 {
   z-index: 20;
   position: fixed;
   width: 100%;
-  background-color: #F0F0F0;
+  background-color: #ffffff;
   .btn-group{
     a {
       color: #3F506F;
       background-color: rgba(0, 0, 0, 0);
       border: 0;
-      &:hover {
-        color: #F0F0F0;
-        background-color: #1F7575;
-      }
     }
 
     .btn {
@@ -58,11 +54,14 @@ body, h1, h2, h3 {
       border-radius: .25rem;
       transition: all .2s ease-in-out;
     }
+
     .btn.focus, .btn:focus {
       -webkit-box-shadow: 0 0 0 0;
       box-shadow: 0 0 0 0;
-      color: #BEBEBE;
-      background-color: #F0F0F0;
+    }
+
+    .btn.active {
+      font-weight: bold;
     }
 
   }
@@ -78,10 +77,6 @@ body, h1, h2, h3 {
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0);
       border: 0;
-      &:hover {
-        color: #F0F0F0;
-        background-color: #1F7575;
-      }
     }
 
     .btn {
@@ -101,14 +96,17 @@ body, h1, h2, h3 {
     .btn.focus, .btn:focus {
       -webkit-box-shadow: 0 0 0 0;
       box-shadow: 0 0 0 0;
-      color: #BEBEBE;
-      background-color: #F0F0F0;
+    }
+
+    .btn.active {
+      font-weight: bold;
     }
 
   }
 }
 
 .header-logo {
+  margin-left: 35px;
   max-width: 200px;
   max-height: 100px;
 }

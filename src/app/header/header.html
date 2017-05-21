@@ -1,4 +1,4 @@
-<header [ngClass]="{'header-transparent':  isScrolledTop,'header': !isScrolledTop}">
+<header [ngClass]="{'header-transparent':  isScrolledTop,'header': !isScrolledTop}" (window:scroll)="scrollHandler($event)">
   <div class="row">
     <div class="col-md-2">
         <img class="header-logo" src="{{getLogoName()}}" alt="Tetra"/>
@@ -7,11 +7,11 @@
       <div class="row">
         <span class="flex-1"></span>
         <div class="btn-group">
-          <a routerLink="/home" class="btn" routerLinkActive="active">Home</a>
-          <a routerLink="/about" class="btn" routerLinkActive="active">Despre</a>
-          <a routerLink="/collaboration" class="btn" routerLinkActive="active">Cum putem colabora</a>
-          <a routerLink="/blog" class="btn" routerLinkActive="active">Blog</a>
-          <a routerLink="/contact" class="btn" routerLinkActive="active">Contact</a>
+          <a routerLink="/home" class="btn" routerLinkActive="active" (click)="setActiveHeader('home')">Home</a>
+          <a routerLink="/about" class="btn" routerLinkActive="active" (click)="setActiveHeader('about')">Despre</a>
+          <a routerLink="/collaboration" class="btn" routerLinkActive="active" (click)="setActiveHeader('collaboration')">Cum putem colabora</a>
+          <a routerLink="/blog" class="btn" routerLinkActive="active" (click)="setActiveHeader('blog')">Blog</a>
+          <a routerLink="/contact" class="btn" routerLinkActive="active" (click)="setActiveHeader('contact')">Contact</a>
         </div>
       </div>
     </div>
