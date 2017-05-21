@@ -158,10 +158,9 @@ body, h1, h2, h3 {
   p {
     padding: 20px;
     text-align: center;
-    max-width: 200px;
-  white-space:nowrap;
-  overflow: hidden;
-  text-overflow:ellipsis;
+    overflow: hidden;
+    max-height: 8.6em;
+    line-height: 1.8em;
   }
   max-height: 440px;
   background-color: #ffffff;
