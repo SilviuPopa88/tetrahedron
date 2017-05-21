@@ -170,11 +170,17 @@ body, h1, h2, h3 {
 
 
 .footer {
-  padding: 0.5rem;
-  font-size: 1rem;
-  background-color: #1f1f1f;
-  text-align: center;
+  background-color: #3F506F;
   color: white;
+  .info {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 10px;
+    p {
+      margin-bottom: 3px;
+    }
+  }
 }
 
 
