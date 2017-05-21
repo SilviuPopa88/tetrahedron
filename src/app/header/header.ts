@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   public isScrolledTop: boolean = true;
-  public activeButton: string = 'home';
+  public activeButton: string = '';
+
+  constructor() {
+    let result = document.location.pathname.split("/");
+    this.activeButton = result[1] === '' ? 'home' : result[1];
+    if (this.activeButton !== 'home') {
+      this.isScrolledTop = false;
+    }
+  }
 
   scrollHandler(event) {
     let number = event.target.body.scrollTop;

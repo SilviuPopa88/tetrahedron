@@ -4,6 +4,4 @@ import {Component} from '@angular/core';
   selector: 'tetra-home',
   template: require('./home.html')
 })
-export class HomeComponent {
-    title: string = 'TeTra';
-}
+export class HomeComponent {}
