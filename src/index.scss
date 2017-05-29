@@ -111,12 +111,6 @@ body, h1, h2, h3 {
   max-height: 100px;
 }
 
-.sub-title {
-  display: block;
-  font-size: 1.0rem;
-  line-break: normal;
-}
-
 .media-container {
   position: relative;
   width: 100vw;
@@ -154,7 +148,7 @@ body, h1, h2, h3 {
 }
 
 .home-about {
-  background-color: #F0F0F0;
+  background-color: #ffffff;
   min-height: 650px;
 }
 
@@ -188,6 +182,38 @@ body, h1, h2, h3 {
   }
 }
 
+/*about*/
+.about {
+  background-color: #ffffff;
+  .start {
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: -10px 0 16px -10px #3F506F;
+    p {
+      font-size: 1.2em;
+      color: #3F506F;
+      text-align: justify;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    .molecul {
+      width: 200px;
+      height: 200px;
+    }
+    .cat-tree{
+      width: 370px;
+      height: 310px;
+    }
+    .universe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
+
 /*blog*/
 .blog-card {
   margin: 10px;
@@ -210,6 +236,7 @@ body, h1, h2, h3 {
 
 
 .footer {
+  z-index: 20;
   background-color: #3F506F;
   color: white;
   .info {
@@ -229,17 +256,14 @@ body, h1, h2, h3 {
   padding: 0 !important;
 }
 
-.text-white-center {
-  align-text: center;
-  padding: 5px;
-  color: #ffffff;
-}
-
 .font-13 {
   font-size: 1.3em;
 }
 
-
 .p-top-100 {
   padding-top: 100px !important;
+}
+
+.p-top-30 {
+  padding-top: 30px !important;
 }
