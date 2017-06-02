@@ -9,7 +9,7 @@ export class HeaderComponent {
   public activeButton: string = '';
 
   constructor() {
-    let result = document.location.pathname.split("/");
+    let result = document.location.pathname.split('/');
     this.activeButton = result[1] === '' ? 'home' : result[1];
     if (this.activeButton !== 'home') {
       this.isScrolledTop = false;

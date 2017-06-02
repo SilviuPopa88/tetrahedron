@@ -6,7 +6,7 @@ html, body, #root {
 
 body, h1, h2, h3 {
   font-weight: 300;
-  background-color: #F0F0F0;
+  background-color: #ffffff;
 }
 
 .padding-top-100 {
@@ -218,19 +218,88 @@ body, h1, h2, h3 {
 .blog-card {
   margin: 10px;
   padding: 0;
+  max-height: 610px;
+  width: 560px;
+  background-color: #ffffff;
+  box-shadow: 0px 0 14px 0px #3F506F;
+  position: relative;
   img {
-    max-width: 100%;
+    width: 560px;
+    min-with: 300px;
+    height: 300px;
     object-fit: cover;
   }
   p {
-    padding: 20px;
-    text-align: center;
+    width: 560px;
+    min-with: 300px;
+    padding: 7px;
+    text-align: justify;
     overflow: hidden;
-    max-height: 8.6em;
+    max-height: 8.7em;
     line-height: 1.8em;
+    font-size: 1.2em;
+    color: #3F506F;
   }
-  max-height: 440px;
+
+  p.title {
+    background-color: rgba(63, 80, 111, 0.6);
+    font-size: 1.8em;
+    position: absolute;
+    z-index: 6;
+    color: #ffffff;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  a {
+    cursor: pointer;
+    span {
+      font-size: 1.2em;
+      padding: 7px;
+      color: #8BC999;
+    }
+
+    i {
+      color: #F69959;
+    }
+  }
+
+  .footer {
+    background-color: #ffffff;
+    font-size: 1em;
+    color:#CFCFCF;
+  }
+
+}
+
+.article {
   background-color: #ffffff;
+  .start {
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: -10px 0 16px -10px #3F506F;
+    p {
+      font-size: 1.2em;
+      color: #3F506F;
+      text-align: justify;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    img {
+      width:280px;
+      height: 200px;
+    }
+
+    .title {
+      font-size: 2.0em;
+    }
+  }
+
+
 }
 
 
@@ -264,6 +333,13 @@ body, h1, h2, h3 {
   padding-top: 100px !important;
 }
 
+.p-top-130 {
+  padding-top: 130px !important;
+}
+
 .p-top-30 {
   padding-top: 30px !important;
+}
+.p-top-10 {
+  padding-top: 10px !important;
 }

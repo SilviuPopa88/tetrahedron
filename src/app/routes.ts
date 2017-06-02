@@ -4,6 +4,7 @@ import {MainComponent} from './main';
 import {AboutComponent} from './about/about';
 import {CollaborationComponent} from './collaboration/collaboration';
 import {BlogComponent} from './blog/blog';
+import {ArticleOneComponent} from './blog/article-one/articleOne';
 import {ContactComponent} from './contact/contact';
 import {HomeComponent} from './home/home';
 
@@ -32,6 +33,10 @@ export const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'blog/robina',
+    component: ArticleOneComponent
   }
 ];
 
