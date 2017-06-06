@@ -11,7 +11,7 @@ export class BlogComponent {
 
   }
 
-  gotoDetail(): void {
-    this.router.navigate(['/blog/robina']);
+  gotoDetail(param : string): void {
+    this.router.navigate(['/blog/' + param]);
   }
 }

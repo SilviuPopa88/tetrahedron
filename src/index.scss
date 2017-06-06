@@ -154,7 +154,7 @@ body, h1, h2, h3 {
 
 .home-card {
   max-height: 400px;
-  max-width: 300px;
+  width: 400px;
   overflow: hidden;
   position: relative;
   img {
@@ -327,6 +327,10 @@ body, h1, h2, h3 {
 
 .font-13 {
   font-size: 1.3em;
+}
+
+.font-8 {
+  font-size: 0.8em;
 }
 
 .p-top-100 {
