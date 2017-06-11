@@ -15,6 +15,13 @@
   </div>
   <div class="home-schema">
     <img src="/assets/images/Schema.png" alt="Tetra"/>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn" (click)="gotToAbout()"
+              [(ngModel)]="singleModel" btnCheckbox
+              btnCheckboxTrue="1" btnCheckboxFalse="0">
+        Citește mai mult
+      </button>
+    </div>
   </div>
   <div class="home-about d-flex justify-content-around align-items-center">
     <div class="home-card">
@@ -35,7 +42,7 @@
         <span class="font-8">Programele noastre se adresează companiilor care își doresc o cultură proprie inovatoare, eficientă și actualizată.
           <ul>
             <li>servicii Next level HR</li>
-            <li>eadership coaching</li>
+            <li>leadership coaching</li>
           </ul>
           </span>
         <i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>
